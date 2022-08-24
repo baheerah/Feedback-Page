@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="index.js" defer></script>
+    <title>AltSchool Feedback</title>
+  </head>
+  <body>
+    <main class="container">
+      <h2 class="heading">Altschool Africa Feedback Form</h2>
+      <form action="" method="post" action="" class="form">
+        <div class="form_group">
+          <p>Full Name</p>
+          <input
+            type="text"
+            name="full_name"
+            placeholder="Full Name"
+            id="full_name"
+            class="full_name"
+            
+          />
+        </div>
+        <div class="form_group">
+          <p>Email address</p>
+          <input
+            type="text"
+            name="email_address"
+            placeholder="Email Address"
+            id="email_address"
+            class="email_address"
+            
+          />
+        </div>
+        <div class="form_group">
+          <p>
+            How would you rate your experience with the LMS(Videos and User
+            friendliness)
+          </p>
+          <select>
+            <option value="" disabled selected hidden>LMS Experience</option>
+            <option value="">Very good(The LMS is easy to navigate)</option>
+            <option value="">Average</option>
+            <option value="">Poor</option>
+          </select>
+        </div>
+        <div class="form_group">
+          <p>
+            How would you describe your experience with Hopin (In general and
+            User Friendliness)
+          </p>
+          <select>
+            <option value="" disabled selected hidden>Hopin experience</option>
+            <option value="">
+              Very good(I have no issues with the paltform)
+            </option>
+            <option value="">
+              Average(I manage to use it though with some difficulties)
+            </option>
+            <option value="">
+              Poor(I really struggle with/can't navigate the platform)
+            </option>
+            <option value="">
+              other(please share any other feedback tih Hopin)
+            </option>
+          </select>
+        </div>
+        <div class="form_group">
+          <p>
+            What other activities would you like to see more in Altschool apart
+            from the classes and LMS videos(Fun Fridays suggestions are welcome
+            here)
+          </p>
+          <input
+            type="text"
+            name="suggetions"
+            id="suggetions"
+            class="suggetions"
+            placeholder="Activities"
+          />
+        </div>
+        <div class="form_group">
+          <p>Are you willing to pay tuition upfront?</p>
+          <select>
+            <option disabled selected hidden>Payment mode</option>
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+        </div>
+        <div class="form_group">
+          <p>Any other Comments/feedback</p>
+          <input
+            type="text"
+            name="comments"
+            id="comments"
+            class="comments"
+            placeholder="Comments or Feedback"
+          />
+        </div>
+        <div class="form_group">
+          <button type="submit" id="submit" class="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

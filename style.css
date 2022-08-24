@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+:root{
+    --custom-color:rgb(87, 84, 84);
+    --padding:20px;
+    --medium-font-size:1.2em;
+    --big-font-size:2.5em;
+    --input-padding:10px 25px;
+    --border-radius:8px;
+    --margin-bottom:20px;
+    --margin-top:10px;
+    --border:1px solid rgb(196, 214, 196);
+    --misc-color:steelblue;
+    
+}
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size:13px;
+    font-family:'Red Hat Display', sans-serif;
+}
+
+.container{
+   
+    width:1200px;
+    margin:0 auto;
+    min-height:400px;
+    max-width:100%;
+}
+.heading{
+    text-align: center;
+    color:var(--misc-color);
+    margin-top:18px;
+    padding:var(--padding);
+}
+.form{
+    width:60%;
+    margin:30px auto;
+    padding:var(--padding);
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.form::-webkit-scrollbar{
+    display:none;
+}
+.form_group{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    margin-top:var(--margin-top);
+
+}
+.form_group p{
+    color:var(--custom-color);
+    font-size:var(--medium-font-size);
+}
+input{
+    padding:var(--input-padding);
+    border-radius:var(--border-radius);
+    border:var(--border);
+}
+input:placeholder{
+    font-size:medium;
+}
+select{
+    padding:var(--input-padding);
+    border-radius:var(--border-radius);
+    border:var(--border);
+    color:var(--custom-color);
+    background-color: white;
+}
+#submit{
+    margin-top:var(--padding);
+    cursor:pointer;
+    border:none;
+    padding:14px;
+    border-radius:var(--border-radius);
+    background-color:var(--misc-color);
+    color:white;
+    font-size:var(--medium-font-size);
+    transition:0.3s;
+    
+}
+#submit:hover{
+    background-color: rgb(51, 109, 235);
+}
+
+@media(max-width:840px){
+    .form{
+        width:100%;
+    }
+}
